@@ -12,6 +12,8 @@ services:
     depends_on:
       - jaeger
       - httpbin
+    ports:
+      - "5000:80"
 
   jaeger:
     image: jaegertracing/all-in-one:latest
