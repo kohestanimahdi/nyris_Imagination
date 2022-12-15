@@ -2,14 +2,21 @@
 
 namespace Imagination.Exceptions
 {
+    public enum ImageConverterExceptionType
+    {
+        Default,
+        EmptyStream,
+        InvalidFile
+    }
     public class ImageConverterException : Exception
     {
-        public enum ImageConverterExceptionType : string
+
+        public ImageConverterException(ImageConverterExceptionType type, Exception innerEception, string message = null) : base(message, innerEception)
         {
-            a = "a",
 
         }
-        public ImageConverterException(string message) : base(message)
+
+        public ImageConverterException(ImageConverterExceptionType type, string message = null) : base(message)
         {
         }
     }
