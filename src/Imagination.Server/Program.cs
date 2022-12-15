@@ -1,13 +1,13 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using OpenTelemetry.Context.Propagation;
+using System.Diagnostics;
 
 namespace Imagination
 {
     internal static class Program
     {
-        internal static readonly ActivitySource Telemetry = new ("Server");
+        internal static readonly ActivitySource Telemetry = new("Server");
 
         private static void Main(string[] args)
         {

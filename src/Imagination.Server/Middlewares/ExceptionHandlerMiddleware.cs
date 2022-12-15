@@ -6,11 +6,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Net.Http.Json;
-using System.Net;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace Imagination.Middlewares
 {
