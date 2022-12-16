@@ -25,4 +25,16 @@
     <ProjectReference Include="..\src\Imagination.Server\Imagination.Server.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resources\big.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Mahdi_Kouhestani_Resume.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\png.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

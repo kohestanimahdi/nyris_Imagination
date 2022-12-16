@@ -74,6 +74,12 @@ namespace Imagination.Services.ImageConverter
 
         }
 
+        public static string GetMimeTypeFromImageByteArray(byte[] byteArray)
+        {
+            using var stream = new MemoryStream(byteArray);
+            return GetMimeTypeFromImageMemoryStream(stream);
+        }
+
         private static void ValidateMemoryStream(MemoryStream memoryStream)
         {
             if (memoryStream is null || memoryStream.Length == 0)
