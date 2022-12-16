@@ -24,7 +24,7 @@ namespace Imagination.Server.Test.Services
         [Fact]
         public void GetImageAsJPEGFormat_ErrorStreamIsEmpty()
         {
-            MemoryStream memoryStream = new MemoryStream();
+            var memoryStream = new MemoryStream();
 
             var exception = Assert.Throws<ImageConverterException>(() => _imageConverterService.GetImageAsJPEGFormat(memoryStream));
 
